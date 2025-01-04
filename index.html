@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h2 class="mainHeading">Expense Tracker App</h2>
+
+    <div class="main">
+        <div class="heading">
+        </div>
+        <div class="yourBalance">
+            <h4 class="head4">YOUR BALANCE</h4>
+            <h1 id="balance" style="margin-right: 9rem;">0.00</h1>
+
+            <div class="IncomeandExpense">
+                <div class="income">
+                    <h4>INCOME</h4>
+                    <p id="money_plus" class="plus" style="color: #2ecc71;">₹ 0.00</p>
+                </div>
+
+                <div class="line">_______</div>
+
+                <div class="expense">
+                    <h4>EXPENSE</h4>
+                    <p id="money_minus" style="color: #c0392b;"> ₹ 0.00 </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <h3 class="hty">History</h3>
+        <p class="lin">________________________________________________________</p>
+        <ul class="list" id="list">
+            <li class="minus"> Cash <span>-$400 </span>
+                <button>
+                    <div class="deleteBtn">X</div>
+                </button>
+            </li>
+        </ul>
+
+        <h3 class="head3">Add new Transaction</h3>
+        <p class="lin">________________________________________________________</p>
+        <form id="form">
+            <div class="form-control">
+                <label class="lbl" for="Text"> <strong>Text</strong></label>
+                <input class="inp" type="text" id="text" placeholder="Enter Text here...">
+            </div>
+
+            <div class="form-control">
+                <label class="lbl" for="Amount"><strong>Amount</strong></label>
+                <input class="inp" type="number" id="amount" placeholder="Enter amount here...">
+            </div>
+
+            <button class="btn1">All transactions</button>
+
+            <canvas id="myChart" width="400" height="400"></canvas>
+            <!-- <canvas id="myChart" width="400" height="400"></canvas>  -->
+
+        </form>
+
+    </div>
+ 
+
+        
+
+    <script src="index.js"></script>
+
+    <canvas id="myChart" width="200" height="200"></canvas>
+
+   
+
+</body>
+
+</html>
